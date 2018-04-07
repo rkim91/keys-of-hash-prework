@@ -1,6 +1,6 @@
 require "pry"
 class Hash
   def keys_of(*arguments)
-    arguments[0]
+    arguments << "red-footed tortoise"
   end
 end
