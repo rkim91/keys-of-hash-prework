@@ -1,7 +1,6 @@
 require "pry"
 class Hash
   def keys_of(*arguments)
-    binding.pry
-    #  << :animals[arguments]
+    map {|key, value| *arguments.include?(value) ? key : nil }.compact
   end
 end
