@@ -1,6 +1,6 @@
 class Hash
   def keys_of(*arguments)
-    map {|key, value| *arguments.include?(value) ? key : nil }.compact
+    map {|key, value| arguments.include?(value) ? key : nil }.compact
   end
 end
 
@@ -8,5 +8,5 @@ end
 #   meals["breakfast"] = "eggs"
 #   meals["lunch"] = "fish"
 #   meals["dinner"] = "steak"
-#
+# 
 #   meals.keys_of("steak")
