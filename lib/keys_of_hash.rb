@@ -8,5 +8,5 @@ end
 #   meals["breakfast"] = "eggs"
 #   meals["lunch"] = "fish"
 #   meals["dinner"] = "steak"
-# 
+#
 #   meals.keys_of("steak")
